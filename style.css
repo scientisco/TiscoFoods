@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #b4c7c7;
+    color: #FFFFFF;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    margin: 20px;
+    
+    
+}
+.container{
+    min-width: 50%;
+    margin: 0 auto;
+    padding: 1em 1em;
+}
+
+.logo{
+    color: #236811;
+    width: 180px;
+    text-decoration: none;
+}
+nav{
+    padding: 0;
+    margin: 1em auto 0;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    padding: 0.3em;
+    font-size: 1em;
+    color:  #f96400;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    transition-property: background;
+    
+}
+
+nav a:hover{
+    color: #FFFFFF;
+    background-color: #236811;
+    border-radius: 10px;
+    
+    
+}
+
+main{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.hero{
+    text-align: center;;
+}
+.hero h1, .special h1{
+    color: #236811;
+    font-size: 2.5em;
+    font-weight: 700
+}
+.hero p, .special p{
+    color:black;
+    font-size: 1em;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 1.2em;
+    margin: 1.5em auto;
+}
+.hero p:before{
+    content: "";
+    display: block;
+    width: 120px;
+    border: 3px solid #f96400;
+    background:  #f96400;
+    margin: 1em auto;
+}
+.hero a, .special a{
+    margin: 15px auto;
+    background:  #f96400;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px #000000 ;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: 0.5s ease;
+    transition-property: background, color;
+}
+
+.fa-angle-double-right{
+    width:30px;
+    
+}
+.hero a:hover, .special a:hover{
+    background:  #b44b04;
+    color: #cfe4e4
+}
+.food_image{
+    padding: 0;
+    text-align: center;
+}
+.food_image img{
+    
+    border-radius: 50px;
+    text-align: center;
+    width: 90%;
+    
+}
+.todays_special{
+    text-align: center;
+    display: block;
+    
+}
+.price{
+    color: dimgray;
+}
+.socials{
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    margin: 0 auto;
+    
+}
+.socials a{
+    width: 50px;
+    text-decoration: none;
+}
+.socials a i.fab{
+    color: #0a1d06;
+    margin: 0 5px;
+    width: 50px;
+}
+footer{
+    margin: 0;
+    padding: 20px;
+    background: #0a1d06;
+    color: #aab6b6;
+}
+.footer-info{
+    display: flex;
+    flex-flow: column;
+}
+footer a{
+    color: #aab6b6;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #f96400;
+    text-decoration: none;
+}
+footer .info{
+    margin: 20px;
+}
+.footer-text{
+    text-align: center;
+}
+.footer-text{
+    margin-top: 30px;
+    
+}
+.footer-text a{
+    text-decoration: none;
+}
+.socials a:hover{
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 960px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+        
+    }
+    nav{
+        margin:0;
+        
+        padding: 0;
+        display: flex;
+    }
+    nav a{
+        font-size: 1.25em;
+        padding: 0.5em ;
+        color:  #f96400;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    main, .todays_special{
+        min-width: 300px;
+        flex-flow: row;
+    }
+    .hero{
+        margin: 2.5em auto;
+        text-align: left;
+    }
+    .hero h1, .todays_special h1{
+        color: #236811;
+        font-size: 2.8em;
+    }
+    .hero p:before{
+        margin: 1em 0;
+    }
+    .hero p {
+        font-size: 1em;
+        padding: 0;
+        margin: 0 0 3em 0;
+    }
+    .special p{
+        margin: 0 auto 3em ;
+        font-size: 1em;
+    }
+   
+    .container .food_image img{
+
+        width: 100%;
+        max-width: 500px;
+        margin: 5em auto;
+        border: none solid;
+        box-shadow: 0 5px 40px #000000;
+    }
+    .special .food_image{
+        text-align: center;
+        min-width: 350px;
+        margin: 15px auto;
+    }
+    footer{
+        
+        margin: 0;
+        padding: 20px;
+        background: #0a1d06;
+        color: #aab6b6;
+    }
+    .footer-info{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        
+    }
+    footer .info{
+        margin: 20px;
+    }
+    .footer-text{
+        display:block;
+        margin-top: 30px;
+        color: #aab6b6;
+    }
+    .footer-text a{
+        text-decoration: none;
+        
+    }
+}
